@@ -1,0 +1,260 @@
+:root {
+    color-scheme: light dark;
+
+    --background: #0f1115;
+    --card: #181b21;
+    --card-border: #2a2e37;
+
+    --text: #f4f4f5;
+    --muted: #a1a1aa;
+
+    --accent: #7c5cff;
+    --accent-pressed: #6848e8;
+
+    --secondary: #2b303a;
+    --secondary-pressed: #383e4a;
+
+    --danger: #d94646;
+    --danger-pressed: #bd3434;
+
+    --input: #101217;
+    --input-border: #343943;
+
+    --success: #52c77a;
+    --error: #ef6464;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: var(--background);
+    color: var(--text);
+
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 620px;
+
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+}
+
+.header {
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    margin: 0;
+
+    font-size: 2rem;
+    font-weight: 750;
+    letter-spacing: -0.03em;
+}
+
+.header p {
+    margin: 8px 0 0;
+
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.card {
+    margin-bottom: 16px;
+    padding: 20px;
+
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+}
+
+.card h2 {
+    margin: 0 0 20px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field:last-child {
+    margin-bottom: 0;
+}
+
+.field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 0.95rem;
+    font-weight: 650;
+}
+
+.field input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    background: var(--input);
+    color: var(--text);
+
+    border: 1px solid var(--input-border);
+    border-radius: 12px;
+
+    outline: none;
+}
+
+.field input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.18);
+}
+
+.field input::placeholder {
+    color: #707784;
+}
+
+.field small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: var(--muted);
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+button {
+    width: 100%;
+
+    margin-bottom: 12px;
+    padding: 14px 16px;
+
+    border: none;
+    border-radius: 12px;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.08s ease,
+        background 0.15s ease,
+        opacity 0.15s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.primary-button {
+    background: var(--accent);
+}
+
+.primary-button:active {
+    background: var(--accent-pressed);
+}
+
+.secondary-button {
+    background: var(--secondary);
+}
+
+.secondary-button:active {
+    background: var(--secondary-pressed);
+}
+
+.danger-button {
+    margin-bottom: 0;
+
+    background: var(--danger);
+}
+
+.danger-button:active {
+    background: var(--danger-pressed);
+}
+
+.status-message {
+    display: none;
+
+    margin: 16px 0 0;
+    padding: 12px 14px;
+
+    border-radius: 10px;
+
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.status-message.success {
+    display: block;
+
+    color: var(--success);
+    background: rgba(82, 199, 122, 0.12);
+}
+
+.status-message.error {
+    display: block;
+
+    color: var(--error);
+    background: rgba(239, 100, 100, 0.12);
+}
+
+.status-message.info {
+    display: block;
+
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.footer {
+    padding: 4px 8px;
+
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding: 18px 12px 32px;
+    }
+
+    .card {
+        padding: 17px;
+        border-radius: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.75rem;
+    }
+}

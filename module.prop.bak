@@ -1,0 +1,6 @@
+id=misnomer
+name=Misnomer
+version=1.0.0
+versionCode=1
+author=SchlorpyDorp
+description=Change Android device identity properties through a simple WebUI.

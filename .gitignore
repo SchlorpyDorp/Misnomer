@@ -1,0 +1,14 @@
+# Packaged releases
+*.zip
+
+# JavaScript dependencies and temporary build files
+node_modules/
+package-lock.json
+webroot/*.bak
+webroot/*.tmp
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

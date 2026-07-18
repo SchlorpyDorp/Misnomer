@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Misnomer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <header class="header">
+            <h1>Misnomer</h1>
+
+            <p>
+                Change how Android identifies your device.
+            </p>
+        </header>
+
+        <section class="card">
+            <h2>Device identity</h2>
+
+            <div class="field">
+                <label for="model">Model</label>
+
+                <input
+                    id="model"
+                    type="text"
+                    placeholder="Loading current value..."
+                    autocomplete="off"
+                >
+
+                <small>Example: OnePlus Nord 5</small>
+            </div>
+
+            <div class="field">
+                <label for="brand">Brand</label>
+
+                <input
+                    id="brand"
+                    type="text"
+                    placeholder="Loading current value..."
+                    autocomplete="off"
+                >
+
+                <small>Example: OnePlus</small>
+            </div>
+
+            <div class="field">
+                <label for="manufacturer">Manufacturer</label>
+
+                <input
+                    id="manufacturer"
+                    type="text"
+                    placeholder="Loading current value..."
+                    autocomplete="off"
+                >
+
+                <small>Example: OnePlus</small>
+            </div>
+
+            <div class="field">
+                <label for="device">Device</label>
+
+                <input
+                    id="device"
+                    type="text"
+                    placeholder="Loading current value..."
+                    autocomplete="off"
+                >
+
+                <small>Internal device identifier</small>
+            </div>
+
+            <div class="field">
+                <label for="name">Product name</label>
+
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Loading current value..."
+                    autocomplete="off"
+                >
+
+                <small>Android product name</small>
+            </div>
+
+            <div class="field">
+                <label for="product">Build product</label>
+
+                <input
+                    id="product"
+                    type="text"
+                    placeholder="Loading current value..."
+                    autocomplete="off"
+                >
+
+                <small>Value used by ro.build.product</small>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Actions</h2>
+
+            <button id="saveButton" class="primary-button">
+                Save changes
+            </button>
+
+            <button id="restoreButton" class="secondary-button">
+                Restore original values
+            </button>
+
+            <button id="rebootButton" class="danger-button">
+                Reboot device
+            </button>
+
+            <p id="statusMessage" class="status-message"></p>
+        </section>
+
+        <footer class="footer">
+            <p>
+                Changes may affect how apps identify your device.
+            </p>
+        </footer>
+
+    </main>
+
+    <script src="script.bundle.js"></script>
+</body>
+</html>
