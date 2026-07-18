@@ -90,7 +90,7 @@ Magisk users can potentially access the **Misnomer** WebUI using **KsuWebUI**:
 
 https://github.com/adivenxnataly/KsuWebUI
 
-Ksu**KsuWebUI**WebUI provides a way to open compatible **KernelSU**-style module WebUIs when using **Magisk**.
+**KsuWebUI** provides a way to open compatible **KernelSU**-style module WebUIs when using **Magisk**.
 
 **Magisk support is currently considered experimental until Misnomer has been properly tested on a Magisk-rooted device.**
 
