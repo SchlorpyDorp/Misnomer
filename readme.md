@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  A lightweight root module for changing the device identity properties reported by Android through a simple WebUI.
+  A lightweight module for changing the device identity properties reported by Android through a simple WebUI.
 </p>
 
 <p align="center">
@@ -327,7 +327,7 @@ Incorrect or unusual property combinations may cause unexpected behaviour in som
 
 **Misnomer** is intended for users who understand the risks associated with modifying Android system properties.
 
-Always make sure you have a way to disable or remove root modules if your device fails to boot correctly.
+Always make sure you have a way to disable or remove modules if your device fails to boot correctly.
 
 Use **Misnomer** at your own risk.
 
