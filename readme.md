@@ -50,8 +50,8 @@ The configured properties are applied systemlessly during boot.
 - Restore original device values
 - Reboot directly from the WebUI
 - Atomic configuration saving to reduce the risk of corrupted settings
-- Native WebUI support on KernelSU and compatible managers
-- Potential Magisk support through KsuWebUI
+- Native WebUI support on **KernelSU** and compatible managers
+- Potential **Magisk** support through **KsuWebUI**
 
 ---
 
@@ -69,13 +69,13 @@ The configured properties are applied systemlessly during boot.
 
 ## Compatibility
 
-### KernelSU / KernelSU Next
+### **KernelSU** / **KernelSU Next**
 
 **Misnomer** is designed primarily for **KernelSU** and **KernelSU Next**.
 
 Install the module, reboot your device, and open **Misnomer** using the **WebUI** button in your root manager.
 
-### Magisk
+### **Magisk**
 
 The backend of **Misnomer** uses standard Android root module components including:
 
@@ -84,13 +84,13 @@ The backend of **Misnomer** uses standard Android root module components includi
 - `post-fs-data.sh`
 - `resetprop`
 
-The official Magisk app does not natively provide KernelSU-style module WebUIs.
+The official **Magisk** app does not natively provide **KernelSU**-style module WebUIs.
 
 Magisk users can potentially access the **Misnomer** WebUI using **KsuWebUI**:
 
 https://github.com/adivenxnataly/KsuWebUI
 
-KsuWebUI provides a way to open compatible KernelSU-style module WebUIs when using Magisk.
+Ksu**KsuWebUI**WebUI provides a way to open compatible **KernelSU**-style module WebUIs when using **Magisk**.
 
 **Magisk support is currently considered experimental until Misnomer has been properly tested on a Magisk-rooted device.**
 
@@ -98,25 +98,25 @@ KsuWebUI provides a way to open compatible KernelSU-style module WebUIs when usi
 
 ## Installation
 
-### KernelSU / KernelSU Next
+### **KernelSU** / **KernelSU Next**
 
 1. Download the latest `Misnomer` ZIP from the GitHub Releases page.
-2. Open KernelSU Manager app.
+2. Open **KernelSU** Manager app.
 3. Go to **Modules**.
 4. Install the **Misnomer** ZIP.
 5. Reboot your device.
 6. Open **Misnomer** using the **WebUI** button.
 
-### Magisk
+### **Magisk**
 
 > Magisk support is currently experimental.
 
 1. Install **KsuWebUI** if you want to use the graphical **Misnomer** interface.
 2. Download the latest **Misnomer** ZIP.
-3. Open Magisk.
+3. Open **Magisk**.
 4. Install the **Misnomer** ZIP.
 5. Reboot your device.
-6. Open **Misnomer** using the **Open with KsuWebUI** option provided by KsuWebUI.
+6. Open **Misnomer** using the **Open with KsuWebUI** option provided by **KsuWebUI**.
 
 ---
 
