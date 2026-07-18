@@ -5,7 +5,7 @@
 <h1 align="center">Misnomer</h1>
 
 <p align="center">
-  <b>Gaslight Android.</b>
+  <b><i>Gaslight Android.</i></b>
 </p>
 
 <p align="center">
