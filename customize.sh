@@ -2,7 +2,7 @@
 
 ui_print " "
 ui_print "================================="
-ui_print "          Misnomer v1.0"
+ui_print "          Misnomer v1.0.2"
 ui_print "================================="
 ui_print " "
 ui_print "- Installing Misnomer"
