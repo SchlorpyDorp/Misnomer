@@ -347,6 +347,7 @@ You are choosing to make these modifications, and if you point your finger at me
 
 You are responsible for any modifications made to your device, not me.
 
+Oh, and this module was more or less vibecoded. Just figured I should probably mention.
 ---
 
 <p align="center">
