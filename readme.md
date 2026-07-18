@@ -27,7 +27,7 @@
 
 It provides a simple WebUI where you can view your device's current identity, change the values you want, save them, and apply the changes after a reboot.
 
-Misnomer currently allows you to change:
+**Misnomer** currently allows you to change:
 
 - Model
 - Brand
@@ -71,13 +71,13 @@ The configured properties are applied systemlessly during boot.
 
 ### KernelSU / KernelSU Next
 
-Misnomer is designed primarily for **KernelSU** and **KernelSU Next**.
+**Misnomer** is designed primarily for **KernelSU** and **KernelSU Next**.
 
-Install the module, reboot your device, and open Misnomer using the **WebUI** button in your root manager.
+Install the module, reboot your device, and open **Misnomer** using the **WebUI** button in your root manager.
 
 ### Magisk
 
-The backend of Misnomer uses standard Android root module components including:
+The backend of **Misnomer** uses standard Android root module components including:
 
 - `module.prop`
 - `customize.sh`
@@ -86,7 +86,7 @@ The backend of Misnomer uses standard Android root module components including:
 
 The official Magisk app does not natively provide KernelSU-style module WebUIs.
 
-Magisk users can potentially access the Misnomer WebUI using **KsuWebUI**:
+Magisk users can potentially access the **Misnomer** WebUI using **KsuWebUI**:
 
 https://github.com/adivenxnataly/KsuWebUI
 
@@ -101,30 +101,30 @@ KsuWebUI provides a way to open compatible KernelSU-style module WebUIs when usi
 ### KernelSU / KernelSU Next
 
 1. Download the latest `Misnomer` ZIP from the GitHub Releases page.
-2. Open your KernelSU-compatible root manager.
+2. Open KernelSU Manager app.
 3. Go to **Modules**.
-4. Install the Misnomer ZIP.
+4. Install the **Misnomer** ZIP.
 5. Reboot your device.
-6. Open **Misnomer** using the module's **WebUI** button.
+6. Open **Misnomer** using the **WebUI** button.
 
 ### Magisk
 
 > Magisk support is currently experimental.
 
-1. Install **KsuWebUI** if you want to use the graphical Misnomer interface.
-2. Download the latest Misnomer ZIP.
+1. Install **KsuWebUI** if you want to use the graphical **Misnomer** interface.
+2. Download the latest **Misnomer** ZIP.
 3. Open Magisk.
-4. Install the Misnomer ZIP as a module.
+4. Install the **Misnomer** ZIP.
 5. Reboot your device.
-6. Open Misnomer using the **Open with KsuWebUI** option provided by KsuWebUI.
+6. Open **Misnomer** using the **Open with KsuWebUI** option provided by KsuWebUI.
 
 ---
 
 ## Usage
 
-Open the Misnomer WebUI.
+Open the **Misnomer** WebUI.
 
-Your device's currently reported identity properties will automatically populate the available fields.
+Your device's currently reported identity properties will automatically fill the available fields.
 
 Change whichever properties you want Android to report.
 
@@ -147,23 +147,23 @@ Reboot your device for the configured properties to be applied fully.
 
 ## Restoring Original Values
 
-Misnomer does not permanently modify the original property files stored in your Android system partitions.
+**Misnomer** does not permanently modify the original property files stored in your Android system partitions.
 
 To remove your configured overrides:
 
-1. Open the Misnomer WebUI.
+1. Open the **Misnomer** WebUI.
 2. Press **Restore original values**.
 3. Reboot your device.
 
 After rebooting, Android should return to reporting the original values provided by your ROM.
 
-You can also disable or uninstall the Misnomer module to stop its property overrides from being applied.
+You can also disable or uninstall the **Misnomer** module to stop its property overrides from being applied.
 
 ---
 
 ## How It Works
 
-Misnomer separates the user interface from the property modification system.
+**Misnomer** separates the user interface from the property modification system.
 
 The basic process is:
 
@@ -221,7 +221,7 @@ ro.product.name
 ro.build.product
 ```
 
-Leaving a configured property empty prevents Misnomer from overriding that property.
+Leaving a configured property empty prevents **Misnomer** from overriding that property.
 
 ---
 
@@ -264,17 +264,17 @@ Stores the identity values selected by the user.
 
 ### `webroot/`
 
-Contains the Misnomer WebUI.
+Contains the **Misnomer** WebUI.
 
 ---
 
-## What Misnomer Does Not Do
+## What **Misnomer** Does Not Do
 
-Misnomer changes selected Android system properties.
+**Misnomer** changes selected Android system properties.
 
 It does **not** completely transform one physical device into another device at a hardware or security level.
 
-Applications may identify your device using information that Misnomer does not currently modify, including:
+Applications may identify your device using information that **Misnomer** does not currently modify, including:
 
 - Hardware-backed identifiers
 - Device attestation
@@ -291,7 +291,7 @@ Changing the model name alone does not make your device indistinguishable from a
 
 ## Development
 
-Misnomer is currently under active development.
+**Misnomer** is currently under active development.
 
 Future versions may expand the number of configurable properties and improve the WebUI, compatibility, profiles, validation, and restore functionality.
 
@@ -307,7 +307,7 @@ v1.0.2
 
 Bug reports, compatibility reports, suggestions, and contributions are welcome.
 
-If you test Misnomer on another device, ROM, root solution, or Android version, compatibility feedback is especially useful.
+If you test **Misnomer** on another device, ROM, root solution, or Android version, compatibility feedback is especially useful.
 
 When reporting an issue, include relevant information such as:
 
@@ -316,7 +316,7 @@ When reporting an issue, include relevant information such as:
 - ROM
 - Root solution
 - Root manager version
-- Misnomer version
+- **Misnomer** version
 - Description of the issue
 
 Do not include sensitive device identifiers in public issue reports.
@@ -329,23 +329,23 @@ Changing Android identity properties can affect how applications and system serv
 
 Incorrect or unusual property combinations may cause unexpected behaviour in some applications.
 
-Misnomer is intended for users who understand the risks associated with modifying Android system properties.
+**Misnomer** is intended for users who understand the risks associated with modifying Android system properties.
 
 Always make sure you have a way to disable or remove root modules if your device fails to boot correctly.
 
-Use Misnomer at your own risk.
+Use **Misnomer** at your own risk.
 
 ---
 
 ## Disclaimer
 
-Misnomer is provided without warranty.
+**Misnomer** is provided without warranty.
 
-I am not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed. Please look at the GitHub repo if you have any concerns about what is included in this module before installing it.
+I am not responsible for bricked devices, dead SD cards, thermonuclear war, or you embarrassing yourself in public because Device Integrity failed and your payment declined. Please look at the GitHub repo if you have any concerns about what this module even does before installing it.
 
-You are choosing to make these modifications, and if you your point finger at me for messing up your own device, I will laugh at you.
+You are choosing to make these modifications, and if you point your finger at me because you messed up your device, I will almost certainly laugh at you.
 
-You are responsible for any modifications made to your device.
+You are responsible for any modifications made to your device, not me.
 
 ---
 
