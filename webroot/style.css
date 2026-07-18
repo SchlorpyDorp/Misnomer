@@ -48,12 +48,58 @@ input {
     font: inherit;
 }
 
+
+/* =========================
+   Misnomer Banner
+   ========================= */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--background);
+}
+
+.hero-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Smoothly fades the bottom of the banner into the WebUI */
+
+.hero-banner::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 60%;
+
+    pointer-events: none;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(15, 17, 21, 0.15) 30%,
+        rgba(15, 17, 21, 0.55) 65%,
+        var(--background) 100%
+    );
+}
+
+
+/* =========================
+   Main Layout
+   ========================= */
+
 .container {
     width: 100%;
     max-width: 620px;
 
     margin: 0 auto;
-    padding: 24px 16px 40px;
+    padding: 16px 16px 40px;
 }
 
 .header {
@@ -75,11 +121,17 @@ input {
     line-height: 1.5;
 }
 
+
+/* =========================
+   Cards
+   ========================= */
+
 .card {
     margin-bottom: 16px;
     padding: 20px;
 
     background: var(--card);
+
     border: 1px solid var(--card-border);
     border-radius: 18px;
 }
@@ -90,6 +142,11 @@ input {
     font-size: 1.1rem;
     font-weight: 700;
 }
+
+
+/* =========================
+   Input Fields
+   ========================= */
 
 .field {
     margin-bottom: 20px;
@@ -124,7 +181,9 @@ input {
 
 .field input:focus {
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.18);
+
+    box-shadow:
+        0 0 0 3px rgba(124, 92, 255, 0.18);
 }
 
 .field input::placeholder {
@@ -137,9 +196,15 @@ input {
     margin-top: 7px;
 
     color: var(--muted);
+
     font-size: 0.8rem;
     line-height: 1.4;
 }
+
+
+/* =========================
+   Buttons
+   ========================= */
 
 button {
     width: 100%;
@@ -197,6 +262,11 @@ button:disabled {
     background: var(--danger-pressed);
 }
 
+
+/* =========================
+   Status Messages
+   ========================= */
+
 .status-message {
     display: none;
 
@@ -213,22 +283,33 @@ button:disabled {
     display: block;
 
     color: var(--success);
-    background: rgba(82, 199, 122, 0.12);
+
+    background:
+        rgba(82, 199, 122, 0.12);
 }
 
 .status-message.error {
     display: block;
 
     color: var(--error);
-    background: rgba(239, 100, 100, 0.12);
+
+    background:
+        rgba(239, 100, 100, 0.12);
 }
 
 .status-message.info {
     display: block;
 
     color: var(--text);
-    background: rgba(255, 255, 255, 0.07);
+
+    background:
+        rgba(255, 255, 255, 0.07);
 }
+
+
+/* =========================
+   Footer
+   ========================= */
 
 .footer {
     padding: 4px 8px;
@@ -240,17 +321,28 @@ button:disabled {
     margin: 0;
 
     color: var(--muted);
+
     font-size: 0.8rem;
     line-height: 1.5;
 }
 
+
+/* =========================
+   Small Screens
+   ========================= */
+
 @media (max-width: 420px) {
+
     .container {
-        padding: 18px 12px 32px;
+        padding:
+            12px
+            12px
+            32px;
     }
 
     .card {
         padding: 17px;
+
         border-radius: 15px;
     }
 
