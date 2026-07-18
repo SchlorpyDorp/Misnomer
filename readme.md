@@ -58,12 +58,10 @@ The configured properties are applied systemlessly during boot.
 ## Screenshots
 
 <p align="center">
-  <img src="assets/webui.png" alt="Misnomer WebUI" width="45%">
+  <img src="assets/webui1.png" alt="Misnomer WebUI 1" width="45%">
   &nbsp;&nbsp;
-  <img src="assets/module.png" alt="Misnomer Module" width="45%">
+  <img src="assets/webui2.png" alt="Misnomer WebUI 2" width="45%">
 </p>
-
-> Screenshots can be added to the `assets` folder as `webui.png` and `module.png`.
 
 ---
 
@@ -86,9 +84,7 @@ The backend of **Misnomer** uses standard Android root module components includi
 
 The official **Magisk** app does not natively provide **KernelSU**-style module WebUIs.
 
-Magisk users can potentially access the **Misnomer** WebUI using **KsuWebUI**:
-
-https://github.com/adivenxnataly/KsuWebUI
+Magisk users can potentially access the **Misnomer** WebUI using [**KsuWebUI**](https://github.com/adivenxnataly/KsuWebUI).
 
 **KsuWebUI** provides a way to open compatible **KernelSU**-style module WebUIs when using **Magisk**.
 
@@ -347,7 +343,8 @@ You are choosing to make these modifications, and if you point your finger at me
 
 You are responsible for any modifications made to your device, not me.
 
-Oh, and this module was more or less vibecoded. Just figured I should probably mention.
+Oh, and this module was more or less vibecoded. Just figured I should probably mention that.
+
 ---
 
 <p align="center">
