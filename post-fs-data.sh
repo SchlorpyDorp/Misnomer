@@ -1,5 +1,9 @@
 #!/system/bin/sh
 
+# Misnomer
+# Copyright (C) 2026 SchlorpyDorp
+# SPDX-License-Identifier: GPL-3.0-only
+
 MODDIR=${0%/*}
 CONFIG="$MODDIR/config/props.conf"
 

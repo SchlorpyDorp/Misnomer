@@ -1,3 +1,10 @@
+
+/*
+ * Misnomer
+ * Copyright (C) 2026 SchlorpyDorp
+ * SPDX-License-Identifier: GPL-3.0-only
+ */
+
 import { exec } from "kernelsu";
 
 const modulePath = "/data/adb/modules/misnomer";
