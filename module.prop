@@ -1,7 +1,8 @@
 id=misnomer
 name=Misnomer
-version=v1.0.2
+version=1.0.2
 versionCode=3
 author=SchlorpyDorp
-description=Your one-stop shop for changing Android device identity properties.
+description=Change Android device identity properties through a simple WebUI
 banner=banner.png
+updateJson=https://raw.githubusercontent.com/SchlorpyDorp/Misnomer/main/update.json
