@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-v1.0.2-7c5cff?style=flat-square" alt="Version">
+  <img src="https://img.shields.io/badge/version-v1.0.3-7c5cff?style=flat-square" alt="Version">
   <img src="https://img.shields.io/badge/KernelSU-Supported-7c5cff?style=flat-square" alt="KernelSU">
   <img src="https://img.shields.io/badge/KernelSU_Next-Supported-7c5cff?style=flat-square" alt="KernelSU Next">
   <img src="https://img.shields.io/badge/Magisk-Experimental-orange?style=flat-square" alt="Magisk">
